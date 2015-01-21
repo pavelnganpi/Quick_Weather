@@ -1,5 +1,6 @@
 package com.paveynganpi.quickweather;
 
+import android.app.AlertDialog;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -64,8 +65,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void alertUserAboutError() {
-
-
+        AlertDialogFragment dialog = new AlertDialogFragment();
+        dialog.show(getFragmentManager(),"error_dialog");
 
     }
 
